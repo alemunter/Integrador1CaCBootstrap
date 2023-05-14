@@ -31,27 +31,22 @@ body{
 #comprarTickets{
     color:#2AA145;
 }
-.laConferencia{
-    height: 93%;
-    /*background:linear-gradient(to bottom,#00000026, #000000c2,#00000026);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-right: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;*/
+.imgnormalizada img {
+    background:linear-gradient(to bottom,#00000026, #000000c2,#00000026);
+    width: 100%;
+    height: 93vh !important;
 }
-
-#carrouselConferencia{
-    height: 50vh;
-}
-
 .contenedorTextConf{
-     width:40%;
-     color:white;
-     text-align: right;
-     font-size: x-large;
+    position: absolute; 
+    right: 15%;
+    bottom: 10%; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.30); /* Añadir para conseguir el fondo con opacidad */
 }
 
 .contenedorTextConf h1{
@@ -60,12 +55,10 @@ body{
 .contenedorTextConf p{
     margin-bottom: 1rem;
 }
-
 .tituloRadores{
     padding-top: 1rem;
     text-align: center;
 }
-
 .card img{
     height: 500px;
     object-fit: cover;
@@ -157,173 +150,80 @@ body{
 }
 .footer{
     background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
-    height: 15vh;
-    margin-top: 1rem
+    height: 10vh;
 }
+.footer .row{
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    text-align: center;
+}
+
 .contenedorFooter a{
     color: white;
     text-decoration: none;
-    align-items: center;
     font-size: 1.2rem;
 }
-/*vamos a cargar ahora el diseño para celular*/
-/*0 - 600px  */
-@media screen and (max-width: 567px){
-    .headerNav{
-        background-color: rgb(56, 56, 56);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: initial;
-        padding:1rem 1rem;
 
+/*  diseño para celular */
+/*  0 - 600px  */
+
+@media screen and (max-width: 567px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
     .contenedorLogo{
         width:70%;
     }
-    .listaNav{
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-        width: 100%;
-    }
     .laConferencia{
-        height: 70%;
-        background:url("../assets/img/madero.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-right:initial;
-        align-items: center;
-        justify-content:center;
-    
+        background-color: #6DB33F;
+        height: 95vh;
+    }
+    .carousel-inner{
+        height: 60vh;
+        /*background-color: #F5DC1D;*/
+        image-rendering: crisp-edges;
     }
     .contenedorTextConf{
-        background:linear-gradient(to bottom, #000000c2, #000000c2);
-        width: 100%;
+        background-color: initial;
+        position: static;
+        margin: 0;
+        height: 25%;
+        width: initial;
+        justify-content: center !important;
         text-align: center;
     }
-    .escritorio{
-        display:none;
+
+    #ba1{
+        background-image: url(../assets/img/ba1.jpg);
     }
+
+
     .padreCards{
-        width: 90%;
         height: initial;
     }
     .formularioOrador{
         height: initial;
     }
     .columnaIzq{
-        height: 30vh;
+        height: inital;
     }
     .columnaDer{
-        height: 35vh;
+        height: initial;
+        padding-bottom: 1rem;
     }
     .footer{
         height: initial;
         padding: 30px;
     }
-    /*
     .footer .row{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         row-gap: 10px;
         text-align: center;
-
-    }*/
-}
-
-@media screen and (min-width: 568px) and (max-width:767px) {
-    .headerNav{
-        background-color: rgb(113, 243, 43);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: initial;
-        padding:1rem 1rem;
-
-    }
-    .contenedorLogo{
-        width:70%;
-    }
-    .navegacion{
-        width: 100%;
-    }
-    .listaNav{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .linkNav{
-        font-size: 1rem;
-    }
-    .padreCards{
-        width: 90%;
-        height: initial;
-    }
-    
-    
-}
-
-@media screen and (min-width: 768px) and (max-width:991px) {
-
-    .headerNav{
-        background-color: rgb(43, 190, 243);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: initial;
-        padding:1rem 1rem;
-
-    }
-    .contenedorLogo{
-        width:50%;
-    }
-    .navegacion{
-        width: 100%;
-    }
-    .listaNav{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .linkNav{
-        font-size: 1.2rem;
-    }
-    .padreCards{
-        width: 90%;
-        height: initial;
     }
 }
-
-@media screen and (min-width: 992px) and (max-width:1299px) {
-    .headerNav{
-        padding:1rem 1rem;
-    }
-    .contenedorLogo{
-        width:30%;
-    }
-    .navegacion{
-        margin-left:20px;
-        width: 65%;
-    }
-    .padreCards{
-        width: 90%;
-        height: initial;
-    }
-}
-
-@media screen and (min-width: 1300px) and (max-width:1399px) {
-    
-}
-
-/*otra opcion 
-/*celulares
-@media screen and (max-width: 767px){
-  
-}
-/*algunas tablets y notebook
-@media screen and (min-width: 768px) and (max-width:1399px) {
-    
-}
-
-*/
