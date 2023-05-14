@@ -31,9 +31,11 @@ body{
 #comprarTickets{
     color:#2AA145;
 }
-.imgnormalizada img {
+.carousel-item img {
     background:linear-gradient(to bottom,#00000026, #000000c2,#00000026);
     width: 100%;
+    object-fit: cover;
+    object-position: center;
     height: 93vh !important;
 }
 .contenedorTextConf{
@@ -179,37 +181,34 @@ body{
         width:70%;
     }
     .laConferencia{
-        background-color: #6DB33F;
-        height: 95vh;
+        /*background-color: #6DB33F;*/
+        min-height: 100vh;
+        height: 110vh;
     }
     .carousel-inner{
-        height: 60vh;
-        /*background-color: #F5DC1D;*/
-        image-rendering: crisp-edges;
+        height: 50vh;
     }
     .contenedorTextConf{
         background-color: initial;
-        position: static;
+        position: inherit;
         margin: 0;
-        height: 25%;
+        height: initial;
         width: initial;
         justify-content: center !important;
         text-align: center;
+        border:1px solid rgb(0, 0, 0);
+    background-color:#353A40;
     }
 
-    #ba1{
-        background-image: url(../assets/img/ba1.jpg);
+    #losOradores{
+       padding-top: 1rem;
     }
-
 
     .padreCards{
         height: initial;
     }
     .formularioOrador{
         height: initial;
-    }
-    .columnaIzq{
-        height: inital;
     }
     .columnaDer{
         height: initial;
