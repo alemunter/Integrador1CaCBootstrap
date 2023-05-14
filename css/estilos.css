@@ -1,0 +1,329 @@
+/*no va dentro de ningun condicional o media querie y es lo que llamamos escritorio primero
+1400 mayor 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+
+.header{
+    height: 100vh;
+   
+}
+.colorGris{
+   background-color: rgb(53,58,64);
+}
+.ulHeader{
+    background-color:pink;
+}
+.navbar-dark .navbar-nav .colorVerde{
+    color: #2AA145;
+}
+.headerNav{
+    height: 25%;
+}
+#comprarTickets{
+    color:#2AA145;
+}
+.laConferencia{
+    height: 93%;
+    /*background:linear-gradient(to bottom,#00000026, #000000c2,#00000026);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;*/
+}
+
+#carrouselConferencia{
+    height: 50vh;
+}
+
+.contenedorTextConf{
+     width:40%;
+     color:white;
+     text-align: right;
+     font-size: x-large;
+}
+
+.contenedorTextConf h1{
+    margin-bottom: 1rem;
+}
+.contenedorTextConf p{
+    margin-bottom: 1rem;
+}
+
+.tituloRadores{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.card img{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4% 4% 0px 0px;
+}
+.temario{
+    display: flex;
+}
+#tituloCardJavascript{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #F5DC1D;
+    background-color: #F5DC1D;
+    color: white;
+    font-weight: bold;
+}
+#tituloCardReact{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #5FE2FA;
+    background-color: #5FE2FA;
+    color: white;
+    font-weight: bold;
+}
+#tituloCardPython{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #3E7FB0;
+    background-color: #3E7FB0;
+    color: white;
+    font-weight: bold;
+}
+#tituloCardDjango{
+    margin-right: 0.8rem;
+    border-radius: 15%;
+    background-color:#092D1F;
+    color: white;
+}
+#tituloCardJava{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #FA9900;
+    background-color: #FA9900;
+    color: white;
+    font-weight: bold;
+}
+#tituloCardSpring{
+    margin-right: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #6DB33F;
+    background-color: #6DB33F;
+    color: white;
+    font-weight: bold;
+}
+#lugarFecha{
+    margin-top: 1rem;
+    color: white;
+    height: 55vh;
+    background:linear-gradient(to bottom,#00000026, #000000c2,#00000026);
+    align-items: stretch;
+}
+.columnaIzq{
+    background-image: url("../assets/img/ba4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+}
+.columnaDer{
+    padding: 1% 1% 0% 1%;
+    border:1px solid rgb(0, 0, 0);
+    background-color:#353A40;
+    color:white;
+    text-align: justify;
+    color:white;
+    height: 55vh;
+}
+.formularioOrador{
+    width:50%;
+    height: 35vh;
+    margin: 1rem auto 1rem auto !important;
+    text-align: center;
+}
+.wsp{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+}
+.footer{
+    background:linear-gradient( to right, #1d3947,#1d4962, #1e5372) ;
+    height: 15vh;
+    margin-top: 1rem
+}
+.contenedorFooter a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.2rem;
+}
+/*vamos a cargar ahora el diseño para celular*/
+/*0 - 600px  */
+@media screen and (max-width: 567px){
+    .headerNav{
+        background-color: rgb(56, 56, 56);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:70%;
+    }
+    .listaNav{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+    }
+    .laConferencia{
+        height: 70%;
+        background:url("../assets/img/madero.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-right:initial;
+        align-items: center;
+        justify-content:center;
+    
+    }
+    .contenedorTextConf{
+        background:linear-gradient(to bottom, #000000c2, #000000c2);
+        width: 100%;
+        text-align: center;
+    }
+    .escritorio{
+        display:none;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    .formularioOrador{
+        height: initial;
+    }
+    .columnaIzq{
+        height: 30vh;
+    }
+    .columnaDer{
+        height: 35vh;
+    }
+    .footer{
+        height: initial;
+        padding: 30px;
+    }
+    /*
+    .footer .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        text-align: center;
+
+    }*/
+}
+
+@media screen and (min-width: 568px) and (max-width:767px) {
+    .headerNav{
+        background-color: rgb(113, 243, 43);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:70%;
+    }
+    .navegacion{
+        width: 100%;
+    }
+    .listaNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .linkNav{
+        font-size: 1rem;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+
+    .headerNav{
+        background-color: rgb(43, 190, 243);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: initial;
+        padding:1rem 1rem;
+
+    }
+    .contenedorLogo{
+        width:50%;
+    }
+    .navegacion{
+        width: 100%;
+    }
+    .listaNav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .linkNav{
+        font-size: 1.2rem;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1299px) {
+    .headerNav{
+        padding:1rem 1rem;
+    }
+    .contenedorLogo{
+        width:30%;
+    }
+    .navegacion{
+        margin-left:20px;
+        width: 65%;
+    }
+    .padreCards{
+        width: 90%;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width:1399px) {
+    
+}
+
+/*otra opcion 
+/*celulares
+@media screen and (max-width: 767px){
+  
+}
+/*algunas tablets y notebook
+@media screen and (min-width: 768px) and (max-width:1399px) {
+    
+}
+
+*/

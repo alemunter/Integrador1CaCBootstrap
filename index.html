@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo</title>
+
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--kit de fontawesome-->
+    <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark colorGris">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/codoacodo.png" alt="Logo" width="100px" class="d-inline-block align-text-top">
+            Conf. Bs.As.
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#laConferencia">La Conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#losOradores">Los Oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarYfecha">Lugar y La Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#convierteteEnOrador">Conviertete en Orador</a>
+              </li>
+              <li class="nav-item">
+                <a id="comprarTickets" class="nav-link colorVerde" href="./pages/comprar_tickets.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="laConferencia" class="laConferencia ">
+        <!--  <div class="contenedorTextConf">
+          <h1>Conferencia Bs.As.</h1>
+          <p class="parrafoConferencia">Codo a Codo llega por primera vez a la Argentina. Un evento para compartir
+             con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. 
+             Ven a conocer a miembros del evento, a otros estudiantes de IT y a los oradores. ¡Te esperamos!</p></p>
+          <div>
+            <a class="btn btn-outline-light" href="#convierteteEnOrador" type="button">Quiero ser orador</a>
+            <a class="btn btn-success" href="pages/comprar_tickets.html" type="button">Comprar tickets</a>
+          </div>
+        </div>  -->
+      
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/ba1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/ba2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/ba3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    </header>
+    <main>
+      <section id="losOradores" class="container mb-5">
+        <h2 class="tituloRadores"><span>CONOCE A LOS</span> <br> ORADORES</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/steve.jpeg" alt="Steve Jobs" class="card-img-top">
+              <div class="card-body">
+                <div class="temario">
+                  <h4 id="tituloCardJavascript">Javascript</h4>
+                  <h4 id="tituloCardReact">React</h4>
+                </div>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">Steven Paul Jobs es un empresario, diseñador industrial, magnate empresarial, propietario de medios 
+                  e inversor estadounidense. Es cofundador y presidente ejecutivo de Apple y 
+                  máximo accionista individual de The Walt Disney Company.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/bill.jpg" alt="Bill Gates" class="card-img-top">
+              <div class="card-body">
+                <div class="temario">
+                  <h4 id="tituloCardPython">Python</h4>
+                  <h4 id="tituloCardDjango">Django</h4>
+                </div>
+                <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">Bill Gates, es un magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. 
+                    Es uno de los empresarios más conocidos que surgieron durante los inicios de los ordenadores personales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/img/ada.jpeg" alt="Ada" class="card-img-top">
+              <div class="card-body">
+                <div class="temario">
+                  <h4 id="tituloCardJava">Java</h4>
+                  <h4 id="tituloCardSpring">Spring</h4>
+              </div>
+                <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">Ada Lovelace es una matemática y escritora británica, célebre por su trabajo acerca de la computadora mecánica
+                    de uso general de Charles Babbage, la denominada máquina analítica. Se la considera como la primera programadora de ordenadores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lugarYfecha" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 columnaIzq">
+          </div>
+          <div class="col-sm-12 col-md-6 columnaDer">
+            <h2>Bs.As - Octubre</h2>
+            <p>Buenos Aires es la capital y ciudad más poblada de la República Argentina. Es una ciudad cosmopolita y un importante destino turístico. Su compleja infraestructura la convierte en 
+              una de las metrópolis de mayor importancia de América y es una ciudad global de categoría alfa, dadas sus influencias en el comercio, finanzas, moda, arte, gastronomía, educación, entretenimiento 
+              y principalmente en su marcada cultura. <br>
+              Según un estudio de calidad de vida (2019) de Mercer Human Resource Consulting, la ciudad se encuentra en la posición 91 a nivel mundial y segunda de América 
+              Latina tras Montevideo. Su renta per cápita es de las más altas de la región. <br>
+              En 2022, fue la ciudad más visitada de Latinoamérica. Es considerada una de las 25 ciudades más influyentes del mundo. <br>
+              Su perfil urbano es marcadamente ecléctico. Se mezclan los estilos colonial español, art decó, art nouveau, neogótico, italianizante, francés borbónico y academicismo francés. Por esto último sumado
+              a su desarrollo edilicio y marcada influencia europea en su arquitectura en determinadas zonas, es que se la conoce en el mundo por el apodo de «La París de América».</p>
+            <a class="btn btn-outline-light" href="" type="button">Conocé Más</a>
+          </div>
+        </div>
+      </section>
+    <section id="convierteteEnOrador" class="form-row formularioOrador">
+      <h2><span>CONVIERTETE EN UN </span> <br> ORADOR</h2>
+      <p>¡Anotate para dar una charla sobre el tema que quieras!</p>
+      <form action="" autocomplete="on">
+        <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="name" class="form-control" id="NombreInput" placeholder="Nombre">
+              <label for="NombreInput">Nombre</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="surname" class="form-control" id="ApellidoInput" placeholder="Apellido">
+              <label for="ApellidoInput">Apellido</label>
+            </div>
+          </div>
+          <div>
+            <textarea class="form-control" rows="3" placeholder="Sobre que quieres hablar?" required></textarea>
+          </div>
+          <p>Recuerda incluir un título para tu charla</p>
+          <div class="d-grid gap-2">
+            <button type="submit" value="Enviar" class="btn btn-success btn-lg btn-block">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+    <footer class="footer container-fluid mt-5">
+      <div class="contenedorFooter row justify-content-center gap-3">
+        <a class="col-sm-12 col-md-1" href="">Preguntas Frecuentes</a>
+        <a class="col-sm-12 col-md-1" href="">Contactanos</a>
+        <a class="col-sm-12 col-md-1" href="">Prensa</a>
+        <a class="col-sm-12 col-md-1" href="">Conferencias</a>
+        <a class="col-sm-12 col-md-1" href="">Terminos y Condiciones</a>
+        <a class="col-sm-12 col-md-1" href="">Privacidad</a>
+        <a class="col-sm-12 col-md-1" href="">Estudiantes</a>
+      </div>
+      <a href=""><img class="wsp" src="./assets/img/whatsapp.png" alt="what"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
