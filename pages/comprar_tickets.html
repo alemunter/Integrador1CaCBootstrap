@@ -1,47 +1,156 @@
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto</title>
-        <!--estilos externos-->
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    <!-- <body style="background-color: rgb(249, 159, 174);">-->
-    <body >
-       <header>
-            <div>
-                <a href="../index.html"><img src="../assets/img/codoacodo.png" alt="Logo"></a>
-                <h2>Conf. Bs.As.</h2>
-               
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo</title>
+
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--kit de fontawesome-->
+    <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark colorGris">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/img/codoacodo.png" alt="Logo" width="100px" class="d-inline-block align-text-top">
+            Conf. Bs.As.
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#laConferencia">La Conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#losOradores">Los Oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarYfecha">Lugar y La Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#convierteteEnOrador">Conviertete en Orador</a>
+              </li>
+              <li class="nav-item">
+                <a id="comprarTickets" class="nav-link colorVerde" href="#header">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id="opcionTicket" class="opcionTicket">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-4 p-0 m-0">
+                        <div class="card" style= "border-width: 2px; border-color:rgb(83, 141, 179)">
+                            <div class="card-body">
+                                <h5 class="nombreCard pt-2">Estudiante</h5>
+                                <p class="card-text">Tiene un descuento <br> 80% <br> *presentar documentacion​</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-0 m-0">
+                        <div class="card" style= "border-width: 2px; border-color:rgb(83, 141, 179)">
+                            <div class="card-body">
+                                <h5 class="nombreCard pt-2">Trainee</h5>
+                                <p class="card-text">Tiene un descuento <br> 50% <br> *presentar documentacion​</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-0 m-0">
+                        <div class="card" style= "border-width: 2px; border-color:rgb(213, 213, 74)">
+                            <div class="card-body">
+                                <h5 class="nombreCard pt-2">Junior</h5>
+                                <p class="card-text">Tiene un descuento <br> 15% <br> *presentar documentacion​</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#laConferencia">La Conferencia</a></li>
-                    <li><a href="../index.html#losOradores">Los Oradores</a></li>
-                    <li><a href="../index.html#lugarYfecha">Lugar y La Fecha</a></li>
-                    <li><a href="../index.html#convierteteEnOrador">Conviertete en Orador</a></li>
-                    <li><a href="#">Comprar tickets</a></li>
-                </ul>
-            </nav>
-          
-       </header>
-       <main>
-          
-       </main>
-     
-       <footer>
-            <div>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-                <a href="">link</a>
-               
+        </section>
+        <section id="ventaTicket" class="ventaTicket mb-4">
+            <div class="container">
+                <h2 class="tituloForm"><span style="font-size:80%; font-weight: lighter;"><small>VENTA</small></span><br> <big style="font-size:200%;">VALOR DEL TICKET $200</big></h2>
+                <div id="compra" class="compra">
+                    <div class="row">
+                        <form id="formulario1" class="form" name="formulario1" method="post" action="********pagina_destino.php">
+                            
+                            <div class="row px-0">
+                                <div class="col-sm-12 col-md-6 pb-3">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                                </div>
+                                <div class="col-sm-12 col-md-6 pb-3">
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
+                                </div>
+                                <div class="col-sm-12 pb-3">
+                                    <input type="email" class="form-control" id="email-form" placeholder="Correo" name="Correo" required>
+                                </div>
+                            </div>
+                            <div class="CantCat row px-0">
+                                <div class="Cantidad col-sm-12 col-md-6 pb-3">
+                                    <label for="" class="Cantidad">Cantidad</label>
+                                    <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                                </div>
+                                <div class="Categoria col col-sm-12 col-md-6 pb-3">
+                                    <label for="" class="Categoria">Categoria</label>
+                                    <select id="categoria" name="categoria" class="form-select" aria-label="Default select example" type="checkbox" required>
+                                        <option selected value="selected">Selecciona una opcion</option>
+                                        <option value="estudiante">Estudiante</option>
+                                        <option value="trainee">Trainee</option>
+                                        <option value="junior">Junior</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                            <div class="row" style="margin-right: 0px; margin-left: 0px; margin-bottom: 3px;">
+                                <a id="aPagar"  class="aPagar">Total a Pagar: $</a>
+                            </div>
+                            <div class="row px-0">
+                                <div class="col-sm-12 col-md-6 mt-2">
+                                    <input id="reset" type="reset" onclick="window.location.reload()" value="Borrar" class="formSubmit">
+                                </div>
+                                <div class="col-sm-12 col-md-6 mt-2">
+                                    <input type="submit" value="Resumen" class="formSubmit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-       </footer>
-    </body>
+        </section>
+    </main>
+    <footer class="footer container-fluid mt-5">
+      <div class="contenedorFooter row justify-content-center gap-3">
+        <a class="col-sm-12 col-md-1" href="">Preguntas Frecuentes</a>
+        <a class="col-sm-12 col-md-1" href="">Contactanos</a>
+        <a class="col-sm-12 col-md-1" href="">Prensa</a>
+        <a class="col-sm-12 col-md-1" href="">Conferencias</a>
+        <a class="col-sm-12 col-md-1" href="">Terminos y Condiciones</a>
+        <a class="col-sm-12 col-md-1" href="">Privacidad</a>
+        <a class="col-sm-12 col-md-1" href="">Estudiantes</a>
+      </div>
+      <a href=""><img class="wsp" src="../assets/img/whatsapp.png" alt="what"></a>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
 </html>
