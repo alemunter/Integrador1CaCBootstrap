@@ -14,7 +14,6 @@ body{
 
 .header{
     height: 100vh;
-   
 }
 .colorGris{
    background-color: rgb(53,58,64);
@@ -50,7 +49,10 @@ body{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.30); /* Añadir para conseguir el fondo con opacidad */
 }
-
+.opcionTicket{
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+}
 .contenedorTextConf h1{
     margin-bottom: 1rem;
 }
@@ -144,6 +146,43 @@ body{
     margin: 1rem auto 1rem auto !important;
     text-align: center;
 }
+
+.opcionTicket .card {
+    margin-left: 1rem;
+}
+
+#cardEstudiante{
+    border-width: 2px;
+    border-color:rgb(83, 141, 179);
+}
+#cardTrainee{
+    border-width: 2px;
+    border-color:rgb(60, 173, 191);
+}
+
+#cardJunior{
+    border-width: 2px;
+    border-color:rgb(213, 213, 74)
+}
+
+.formularioTickets{
+    height: 55vh;
+    margin: 1rem auto 1rem auto !important;
+    text-align: center;
+}
+
+.ResumenPago{
+    background-color: rgb(140, 180, 197);
+    color: rgb(53, 89, 133);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
 .wsp{
     position:fixed;
     bottom:10px;

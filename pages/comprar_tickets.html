@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
   </head>
   <body>
-    <header class="header">
+    <header>
       <nav class="navbar navbar-expand-lg navbar-dark colorGris">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -61,7 +61,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-4 p-0 m-0">
-                        <div class="card" style= "border-width: 2px; border-color:rgb(83, 141, 179)">
+                        <div id="cardEstudiante" class="card">
                             <div class="card-body">
                                 <h5 class="nombreCard pt-2">Estudiante</h5>
                                 <p class="card-text">Tiene un descuento <br> 80% <br> *presentar documentacion​</p>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 p-0 m-0">
-                        <div class="card" style= "border-width: 2px; border-color:rgb(83, 141, 179)">
+                        <div id="cardTrainee" class="card">
                             <div class="card-body">
                                 <h5 class="nombreCard pt-2">Trainee</h5>
                                 <p class="card-text">Tiene un descuento <br> 50% <br> *presentar documentacion​</p>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 p-0 m-0">
-                        <div class="card" style= "border-width: 2px; border-color:rgb(213, 213, 74)">
+                        <div id="cardJunior" class="card">
                             <div class="card-body">
                                 <h5 class="nombreCard pt-2">Junior</h5>
                                 <p class="card-text">Tiene un descuento <br> 15% <br> *presentar documentacion​</p>
@@ -87,51 +87,57 @@
                 </div>
             </div>
         </section>
-        <section id="ventaTicket" class="ventaTicket mb-4">
+        <section id="formularioTickets" class="formularioTickets mb-4">
             <div class="container">
-                <h2 class="tituloForm"><span style="font-size:80%; font-weight: lighter;"><small>VENTA</small></span><br> <big style="font-size:200%;">VALOR DEL TICKET $200</big></h2>
-                <div id="compra" class="compra">
+                VENTA
+                <br><h2>VALOR DEL TICKET $200</h2>
                     <div class="row">
-                        <form id="formulario1" class="form" name="formulario1" method="post" action="********pagina_destino.php">
-                            
+                        <form action="" autocomplete="on">
+                          <div class="row g-2">
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input id="NombreInput" type="name" class="form-control" placeholder="Nombre" required>
+                                <label for="NombreInput">Nombre</label>
+                              </div>
+                            </div>
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input id="ApellidoInput" type="surname" class="form-control" placeholder="Apellido" required>
+                                <label for="ApellidoInput">Apellido</label>
+                              </div>
+                            </div>
+                            <div class="form-floating">
+                              <input id="EmailInput" type="email" class="form-control" placeholder="Email" required>
+                              <label for="EmailInput">Email</label>
+                            </div>
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <input id="cantidadInput" type="number" class="form-control" placeholder="Cantidad" required>
+                                <label for="cantidadInput">Cantidad</label>
+                              </div>
+                            </div>
+                            <div class="col-md">
+                              <div class="form-floating">
+                                <select id="categoriaInput" name="categoria" class="form-select" aria-label="Default select example" type="checkbox" required>
+                                  <option selected value="selected">Selecciona una opcion</option>
+                                  <option value="estudiante">Estudiante</option>
+                                  <option value="trainee">Trainee</option>
+                                  <option value="junior">Junior</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row g-2">
+                              <a id="ResumenPago"  class="ResumenPago">Total a Pagar: $</a>
+                            </div>
                             <div class="row px-0">
-                                <div class="col-sm-12 col-md-6 pb-3">
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
-                                </div>
-                                <div class="col-sm-12 col-md-6 pb-3">
-                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido" required>
-                                </div>
-                                <div class="col-sm-12 pb-3">
-                                    <input type="email" class="form-control" id="email-form" placeholder="Correo" name="Correo" required>
-                                </div>
-                            </div>
-                            <div class="CantCat row px-0">
-                                <div class="Cantidad col-sm-12 col-md-6 pb-3">
-                                    <label for="" class="Cantidad">Cantidad</label>
-                                    <input id="cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
-                                </div>
-                                <div class="Categoria col col-sm-12 col-md-6 pb-3">
-                                    <label for="" class="Categoria">Categoria</label>
-                                    <select id="categoria" name="categoria" class="form-select" aria-label="Default select example" type="checkbox" required>
-                                        <option selected value="selected">Selecciona una opcion</option>
-                                        <option value="estudiante">Estudiante</option>
-                                        <option value="trainee">Trainee</option>
-                                        <option value="junior">Junior</option>
-                                    </select>
-                                    
-                                </div>
-                            </div>
-                            <div class="row" style="margin-right: 0px; margin-left: 0px; margin-bottom: 3px;">
-                                <a id="aPagar"  class="aPagar">Total a Pagar: $</a>
-                            </div>
-                            <div class="row px-0">
-                                <div class="col-sm-12 col-md-6 mt-2">
-                                    <input id="reset" type="reset" onclick="window.location.reload()" value="Borrar" class="formSubmit">
-                                </div>
-                                <div class="col-sm-12 col-md-6 mt-2">
-                                    <input type="submit" value="Resumen" class="formSubmit">
-                                </div>
-                            </div>
+                              <div class="col-sm-12 col-md-6 mt-2">
+                                  <button id="reset" type="reset" onclick="window.location.reload()" value="Borrar" class="btn btn-success btn-lg btn-block">Borrar</button>
+                              </div>
+                              <div class="col-sm-12 col-md-6 mt-2">
+                                  <button id="enviar" type="submit" value="Enviar" class="btn btn-success btn-lg btn-block">Enviar</button>
+                              </div>
+                          </div>
+                          </div>
                         </form>
                     </div>
                 </div>
@@ -151,6 +157,6 @@
       <a href=""><img class="wsp" src="../assets/img/whatsapp.png" alt="what"></a>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/comprarTickets.js"></script>
   </body>
 </html>
