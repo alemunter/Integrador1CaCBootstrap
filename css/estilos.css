@@ -249,6 +249,10 @@ body{
     .formularioOrador{
         height: initial;
     }
+    .formularioTickets{
+        background-color: #F5DC1D;
+        height: 65vh;
+    }
     .columnaDer{
         height: initial;
         padding-bottom: 1rem;
