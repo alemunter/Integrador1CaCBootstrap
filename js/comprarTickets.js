@@ -1,8 +1,6 @@
 /* JS para comprar_tickets.html */
 
-const formulario = document.getElementById('formularioTickets');
-
-formulario.addEventListener('submit', function(event){
+function calculoEntradas(event) {
     event.preventDefault();
     let nombre = document.getElementById('NombreInput').value;
     console.log(nombre)
@@ -31,8 +29,9 @@ formulario.addEventListener('submit', function(event){
 
     var botonRespuesta = document.getElementById('ResumenPago');
     botonRespuesta.style.display = 'block';
-    botonRespuesta.textContent = 'Total a Pagar: $ ' + (valor * cantidad);
-        
+    botonRespuesta.textContent = 'Total a Pagar: $ ' + (valor * cantidad);      
+}
 
-})
+const formulario = document.getElementById('formularioTickets');
 
+formulario.addEventListener('submit',calculoEntradas)
