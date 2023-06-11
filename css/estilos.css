@@ -250,8 +250,11 @@ body{
         height: initial;
     }
     .formularioTickets{
-        background-color: #F5DC1D;
-        height: 65vh;
+        display: flex;
+        height: initial;
+    }
+    #filaBotonesFormularioTickets{
+        flex-direction: row;
     }
     .columnaDer{
         height: initial;

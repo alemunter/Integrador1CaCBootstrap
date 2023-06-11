@@ -27,11 +27,16 @@ function calculoEntradas(event) {
     }
     console.log('Total a Pagar: $ ' + (valor * cantidad));
 
-    var botonRespuesta = document.getElementById('ResumenPago');
-    botonRespuesta.style.display = 'block';
-    botonRespuesta.textContent = 'Total a Pagar: $ ' + (valor * cantidad);      
+    document.getElementById('ResumenPago').textContent = 'Total a Pagar: $ ' + (valor * cantidad);   
+    console.log("Modificando ResumenPago")
+}
+
+function borrarValoresCampos() {
+    console.log("Borrando ResumenPago")
+    document.getElementById('ResumenPago').textContent = 'Total a Pagar: $ ';   
 }
 
 const formulario = document.getElementById('formularioTickets');
 
-formulario.addEventListener('submit',calculoEntradas)
+formulario.addEventListener('submit',calculoEntradas);
+formulario.addEventListener('reset',borrarValoresCampos)
